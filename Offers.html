@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .offer-section {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .offer-category {
+            margin-bottom: 30px;
+        }
+
+        .offer-box {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .offer-box:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* Add additional styling as needed */
+    </style>
+</head>
+<body>
+
+<!-- Offer Section -->
+<div class="offer-section">
+    <div class="offer-category">
+        <h2>Pro Offers</h2>
+        <div class="offer-box" onclick="purchaseOffer('Pro', '25% off for ₹50')">
+            <h3>25% off</h3>
+            <p>₹50</p>
+        </div>
+        <div class="offer-box" onclick="purchaseOffer('Pro', '40% off for ₹70')">
+            <h3>40% off</h3>
+            <p>₹70</p>
+        </div>
+        <div class="offer-box" onclick="purchaseOffer('Pro', '50% off for ₹100')">
+            <h3>50% off</h3>
+            <p>₹100</p>
+        </div>
+    </div>
+
+    <div class="offer-category">
+        <h2>Lite Offers</h2>
+        <div class="offer-box" onclick="purchaseOffer('Lite', '5% off for ₹10')">
+            <h3>5% off</h3>
+            <p>₹10</p>
+        </div>
+        <div class="offer-box" onclick="purchaseOffer('Lite', '10% off for ₹25')">
+            <h3>10% off</h3>
+            <p>₹25</p>
+        </div>
+        <div class="offer-box" onclick="purchaseOffer('Lite', '15% off for ₹35')">
+            <h3>15% off</h3>
+            <p>₹35</p>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for interactive behavior -->
+<script>
+    function purchaseOffer(category, details) {
+        // Add your logic for handling offer purchases
+        alert('You have purchased a ' + category + ' offer: ' + details);
+    }
+</script>
+
+</body>
+</html>
